@@ -1,0 +1,21 @@
+<h3>Edit this pokemon</h3>
+
+
+
+
+
+<form action="/pokemon/<%= @instructor.id %>" method="post">
+  <input type="hidden" name="_method" value="put">
+
+  <label for="pokemon[name]">Name:</label>
+  <input name="pokemon[name]" value="<%= @pokemon.name %>">
+
+  <label for="pokemon[poke_type]">Type:</label>
+  <input name="pokemon[poke_type]" value="<%= @pokemon.poke_type %>">
+
+  <label for="pokemon[cp]">cp:</label>
+  <input name="pokemon[cp]" value="<%= @pokemon.cp %>">
+
+
+  <input type="submit" value="Update">
+</form>
